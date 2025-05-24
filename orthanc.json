@@ -1,5 +1,5 @@
 {
-  "Name" : "M A P D R",
+  "Name" : "Grupo Reditech",
   "StorageDirectory" : "/var/lib/orthanc/db",
   "IndexDirectory" : "/var/lib/orthanc/db",
   "StorageCompression" : true,
@@ -8,12 +8,13 @@
   "MaximumStorageCacheSize" : 128,
   "LuaScripts" : [
   ],
-  "Plugins" : [ 
+  "Plugins" : [
     "/usr/share/orthanc/plugins", "/usr/local/share/orthanc/plugins"
   ],
   "ConcurrentJobs" : 2,
   "HttpServerEnabled" : true,
   "OrthancExplorerEnabled" : true,
+  "DicomPort": 11112,
   "HttpPort" : 8042,
   "HttpDescribeErrors" : true,
   "HttpCompressionEnabled" : true,
@@ -21,9 +22,9 @@
   "WebDavDeleteAllowed" : false,
   "WebDavUploadAllowed" : true,
   "DicomServerEnabled" : true,
-  "DicomAet" : "MAPDR",
+  "DicomAet" : "DCM4CHEE",
   "DicomCheckCalledAet" : true,
-  "DicomPort" : 4242,
+  "DicomPort" : 11112,
   "DefaultEncoding" : "Latin1",
   "AcceptedTransferSyntaxes" : [ "1.2.840.10008.1.*" ],
   "UnknownSopClassAccepted" : false,
@@ -36,7 +37,8 @@
   "SslTrustedClientCertificates" : "trustedClientCertificates.pem",
   "AuthenticationEnabled" : true,
     "RegisteredUsers" : {
-    "mapdr" : "changestrongpassword"
+    "admin" : "admin" ,
+    "admin2" : "admin"
   },
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : true,
@@ -48,7 +50,8 @@
   "DicomAlwaysAllowMove" : false,
   "DicomCheckModalityHost" : false,
   "DicomModalities" : {
-      // "MAPDRX" : [ "MAPDR", "127.0.0.1", 11112]
+      "RADIANT" : [ "PC1", "0.0.0.0", 11112]
+     // "MAC" : [ "MAC1", "0.0.0.0", 11112]
   },
   "DicomModalitiesInDatabase" : false,
   "DicomEchoChecksFind" : false,
