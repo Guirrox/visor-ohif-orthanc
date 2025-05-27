@@ -15,6 +15,8 @@ Este proyecto proporciona una solución sencilla para desplegar un visor médico
 ### 📦 Pasos para desplegar
 
 ```bash
+docker network create pacs
+
 # 1. Clona este repositorio
 git clone https://github.com/Guirrox/ohif-orthanc.git
 cd ohif-orthanc
